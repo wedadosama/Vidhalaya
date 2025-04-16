@@ -1,13 +1,17 @@
 document.getElementById("toggle-theme").onclick = () => {
-  if (document.body.classList.contains("dark-theme")) {
-    document.body.classList.remove("dark-theme");
-    document.getElementById("toggle-theme").src = "asstes/icons/dark.webp";
-  } else {
-    document.body.classList.add("dark-theme");
-    document.getElementById("toggle-theme").src = "asstes/icons/light.webp";
-  }
+  document.body.classList.toggle("dark-theme");
+  const img = document.getElementById("toggle-theme");
+  img.src = document.body.classList.contains("dark-theme")
+    ? "assets/icons/dark.webp"
+    : "assets/icons/light.webp";
 };
 
-document.getElementById("toggle-nav-menu").onclick = () => {
-  document.getElementById("nav-menu").classList.toggle("open");
-};
+// Menu toggle on small screens
+document.getElementById("menu-toggle").addEventListener("change", function () {
+  const navMenu = document.getElementById("nav-menu");
+  if (this.checked) {
+    navMenu.classList.add("open");
+  } else {
+    navMenu.classList.remove("open");
+  }
+});

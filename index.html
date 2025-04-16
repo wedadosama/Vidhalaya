@@ -6,7 +6,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/header.css" />
     <title>Vidhalaya</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/icons/icon (7).png" alt="" class="icon-log" />
+            Eduvi
+          </a>
+        </div>
+        <nav>
+          <label for="menu-toggle">
+            <img src="assets/icons/menu.webp" class="toggle-menu " alt="menu" />
+          </label>
+          <input type="checkbox" id="menu-toggle" hidden />
+          <ul id="nav-menu">
+            <li><a href="#">Shop</a></li>
+            <li>
+              <a href="#">For Kindergarten <i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">For High School <i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">For College <i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">Courses <i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">  <span>Cart (0)</span><img src="assets/icons/Vector.png" class="icon-vector" /></a>
+            </li>
+            <li>
+              <a href="#"> <span>My Account</span><img src="assets/images/Vector.png" class="icon" /></a>
+            </li>
+          </ul>
+          <img src="assets/icons/dark.webp" id="toggle-theme" class="icon" alt="dark mode" />
+        </nav>
+      </div>
+    </header>
+    <script src="assets/scripts/main.js"></script>
+  </body>
 </html>
