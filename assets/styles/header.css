@@ -8,17 +8,15 @@
 
 :root {
   --primary-color: #0a033c;
-  --background: linear-gradient(to bottom, #f5eaff, #e8d8ff, #dbc7ff);
+  --background-color: linear-gradient(to right, #f5eaff, #e8d8ff, #dbc7ff);
   --white: #ffffff;
-  --link-size: 16px;
-  --text-size: 30px;
 }
 
-/* body.dark-theme {
-  --primary-color: #9c4df4;
-  --background: linear-gradient(to bottom, #c79bef #8a4be2, #4915a9);
+body.dark-theme {
+  --primary-color: #bd8ef2;
+  --background-color: linear-gradient(to right, #c79bef #8a4be2, #4915a9);
   --white: #000000;
-} */
+}
 
 html {
   scroll-behavior: smooth;
@@ -26,9 +24,8 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(to right, #f5eaff, #ebdfff, #e0d4ff);
+  background: linear-gradient(to right, #f5f0f9, #eee5fe, #e5dcfc);
 }
-
 
 .container {
   padding: 0 15px;
@@ -69,11 +66,9 @@ img {
   width: 18px;
   height: auto;
   cursor: pointer;
-  margin-left: 8px; /* زودنا المسافة */
+  margin-left: 8px;
   vertical-align: middle;
 }
-
-
 header {
   position: sticky;
   top: 0;
@@ -90,7 +85,7 @@ header .container {
 header .logo {
   font-size: 25px;
   font-weight: bold;
-  color: #0a033c;
+  color: var(--primary-color);
 }
 
 header .container nav {
@@ -100,7 +95,7 @@ header .container nav {
 }
 
 header nav ul {
-  font-size: 16px;
+  font-size: 13px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -110,8 +105,8 @@ header nav ul {
   header nav ul {
     position: absolute;
     top: 60px;
-    left: 0;
-    width: 250px;
+    right: 0;
+    width: 200px;
     background-color: var(--white);
     flex-direction: column;
     display: none;
@@ -126,7 +121,7 @@ header nav ul {
   header nav ul li a {
     display: block;
     padding: 15px;
-    color:#0A033C;
+    color: var(--primary-color);
   }
 
   header nav img.toggle-menu {
@@ -139,19 +134,22 @@ header nav ul {
     display: none;
   }
 }
-.icon-vector{
+.icon-vector {
   width: 15px;
   height: auto;
   cursor: pointer;
-  margin-left: 8px; /* زودنا المسافة */
+  margin-left: 8px;
   vertical-align: middle;
-
 }
-.icon-log{
+.icon-log {
   width: 25px;
   height: auto;
   cursor: pointer;
-  margin-left: 8px; /* زودنا المسافة */
+  margin-left: 8px;
   vertical-align: middle;
+}
 
+header nav ul:hover {
+  background-color: #ceabfe;
+  color: var(--white);
 }

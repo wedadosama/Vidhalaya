@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0a033c;
+  --background-color: linear-gradient(to right, #f5eaff, #e8d8ff, #dbc7ff);
+  --white: #ffffff;
+  --btn-color: #7b2eff;
+}
+
+body.dark-theme {
+  --primary-color: #380176;
+  --background-color: linear-gradient(to right, #c79bef #8a4be2, #4915a9);
+  --white: #000000;
+  --btn-color: #230655;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #f5f0f9, #eee5fe, #e5dcfc);
+}
+
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1190px;
+  }
+}
+
+.hero .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.hero {
+  position: relative;
+  padding: 50px 0;
+  background: linear-gradient(to right, #f5f0f9, #eee5fe, #e5dcfc);
+}
+
+.hero-text {
+  flex: 1 1 50%;
+  padding-left: 60px;
+  margin-bottom: 20px;
+}
+
+.hero-text .tagline {
+  background-color: var(--white);
+  color: #ff5c5c;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  color: var(--primary-color, #0a033c);
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: #555;
+  font-size: 12px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.search-box {
+  display: flex;
+
+  background-color: var(--white);
+  padding: 7px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  width: fit-content;
+}
+
+.icon-search {
+  width: 13px;
+}
+
+.search-box select,
+.search-box input {
+  border: none;
+  outline: none;
+  padding-top: 3px;
+  font-size: 8px;
+}
+
+.search-box button {
+  background-color: #7b2eff;
+  color: white;
+  padding: 4px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-image {
+  position: relative;
+  flex: 1 1 40%;
+  text-align: center;
+  width: fit-content;
+  height: auto;
+}
+.Kid-student {
+  background-image: url(/assets/images/background.png);
+  border-radius: 30px;
+}
+
+.hero-image img {
+  max-width: 60%;
+}
+
+.icons {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.icon1 {
+  top: 2%;
+  left: 0%;
+}
+
+.icon2 {
+  top: 10%;
+  right: 22%;
+}
+
+.icon3 {
+  bottom: 35%;
+  left: 16%;
+}
+
+.icon4 {
+  bottom: 10%;
+  right: 17%;
+}
