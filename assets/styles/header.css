@@ -150,6 +150,6 @@ header nav ul {
 }
 
 header nav ul:hover {
-  background-color: #ceabfe;
+  background-color: #b4b1b8;
   color: var(--white);
 }

@@ -12,3 +12,4 @@ document.getElementById("menu-toggle").addEventListener("change", function () {
     navMenu.classList.remove("open");
   }
 });
+
