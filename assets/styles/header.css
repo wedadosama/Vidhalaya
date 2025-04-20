@@ -15,7 +15,7 @@
 body.dark-theme {
   --primary-color: #bd8ef2;
   --background-color: linear-gradient(to right, #c79bef #8a4be2, #4915a9);
-  --white: #000000;
+  --white: #6d6767;
 }
 
 html {
@@ -113,6 +113,11 @@ header nav ul {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     padding: 10px 0;
   }
+  header nav ul:hover {
+    background-color: #b4b1b8;
+    color: var(--white);
+  }
+  
 
   header nav ul.open {
     display: block;
@@ -149,7 +154,3 @@ header nav ul {
   vertical-align: middle;
 }
 
-header nav ul:hover {
-  background-color: #b4b1b8;
-  color: var(--white);
-}

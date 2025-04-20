@@ -167,7 +167,7 @@ body {
   border-radius: 1rem;
   overflow: hidden;
 }
-.about::after{
+.about::after {
   content: "";
   position: absolute;
   top: 35%;
@@ -257,7 +257,6 @@ body {
   background: var(--white);
   padding: 10px;
   border-radius: 5px;
- 
 }
 .counter-box img {
   width: 20px;
@@ -280,4 +279,98 @@ body {
   .search-box {
     padding: 2px;
   }
+}
+
+.lessons-section {
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header p {
+  color: #777;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.tabs {
+  margin-bottom: 2rem;
+}
+
+.tabs button {
+  margin: 0 0.5rem;
+  width: 152px;
+  height: 69px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button{
+  background-color: var(--background-color);
+}
+.tabs .active {
+  background: #ff715b;
+  color: white;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.card .btn {
+  display: inline-block;
+  margin-top: 1rem;
+
+  border: 2px solid var(--btn-color);
+  color: var(--btn-color);
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.card .btn:hover {
+  background-color: var(--btn-color);
+  color: var(--white);
+}
+.more-btn .btn-purple {
+  background: var(--btn-color);
+  color: var(--white);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
 }
