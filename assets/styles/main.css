@@ -271,7 +271,8 @@ body {
   }
   .mini-video,
   .call-controls,
-  .promo-icon {
+  .promo-icon,
+  .user-img {
     display: none;
   }
 
@@ -324,18 +325,23 @@ button {
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
-
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 .card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
   width: 250px;
   height: 300px;
   background-color: var(--white);
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
 }
 
 .card img {
@@ -427,7 +433,7 @@ p {
 }
 
 .register-btn {
-  background-color: #805ad5;
+  background-color:var(--btn-color);
   color: white;
   padding: 12px 24px;
   border: none;
@@ -469,18 +475,6 @@ p {
   right: 35%;
 }
 
-.stars::after {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  width: 80px;
-  height: 80px;
-  color: var(--btn-color);
-  background-image: url("/assets/images/Pattern.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .mentor-section {
   padding: 50px 0;
 }
@@ -496,7 +490,6 @@ p {
 .image-container {
   width: 300px;
   height: 300px;
- 
 }
 
 .image-container img {
@@ -530,5 +523,95 @@ p {
   font-weight: bold;
   text-decoration: none;
 }
+.newsletter-box {
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  padding: 50px 30px;
+  color:var(--white);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  max-width: 850px;
+  margin: auto;
+}
 
+.newsletter-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
 
+.newsletter-content p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 450px;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 12px;
+  width: 350px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--white);
+}
+
+.subscribe-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.subscribe-form button {
+  background-color: var(--btn-color);
+  color: var(--white);
+  padding: 12px 20px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.user-top-left {
+  top: 65px;
+  left: 30px;
+}
+.user-top-right {
+  top: 65px;
+  right: 30px;
+}
+.user-mid-left {
+  top: 50%;
+  left: 80px;
+}
+.user-mid-right {
+  top: 50%;
+  right: 80px;
+}
+.user-bottom-left {
+  bottom: 65px;
+  left: 30px;
+}
+.user-bottom-right {
+  bottom: 65px;
+  right: 15px;
+}
