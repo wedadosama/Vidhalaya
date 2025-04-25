@@ -114,10 +114,10 @@ header nav ul {
     padding: 10px 0;
   }
   header nav ul:hover {
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    color: var(--white);
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.9); 
+    color:var(--white);
+    background: linear-gradient(to right, #1a002d, #000000); 
   }
-  
 
   header nav ul.open {
     display: block;
