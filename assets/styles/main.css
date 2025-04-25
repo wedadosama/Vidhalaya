@@ -13,10 +13,11 @@
 }
 
 body.dark-theme {
-  --primary-color: #2a1b47;
+  --primary-color: #d07efde5;
   --background-image: linear-gradient(to right, #3c2a66, #2a1b47, #141020); 
   --white: #e1e1e1; 
   --btn-color: #4b2e83; 
+  
 }
 
 
