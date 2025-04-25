@@ -1,0 +1,64 @@
+footer {
+  padding: 50px 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: var(--primary-color);
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.social-icons a:hover {
+  color: #4a6bff;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  margin-bottom: 30px;
+  padding: 0px 70px;
+}
+
+.footer-section h2 {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #5d5a6f;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul li a:hover {
+  color: var(--btn-color);
+}
+.Eduvi {
+  padding-top: 60px;
+
+  color: #5d5a6f;
+}
+.instagram {
+  color: #ff6652;
+}
