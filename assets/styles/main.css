@@ -5,27 +5,27 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --primary-color: #0a033c;
-  --background-color: linear-gradient(to right, #f5eaff, #e8d8ff, #dbc7ff);
+  --background-image: linear-gradient(to right, #f5eaff, #e8d8ff, #dbc7ff);
   --white: #ffffff;
   --btn-color: #7b2eff;
 }
 
 body.dark-theme {
-  --primary-color: #380176;
-  --background-color: linear-gradient(to right, #c79bef #8a4be2, #4915a9);
-  --white: #000000;
-  --btn-color: #230655;
+  --primary-color: #2a1b47; /* أرجواني غامق مع لمسة من الأسود */
+  --background-image: linear-gradient(to right, #3c2a66, #2a1b47, #141020); /* تدرج لوني غني بين الأرجواني الداكن والأسود */
+  --white: #e1e1e1; /* أبيض فاتح بلمسة من الرمادي */
+  --btn-color: #4b2e83; /* زرار بلون أرجواني داكن يبرز وسط الخلفية */
 }
+
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: linear-gradient(to right, #f5f0f9, #eee5fe, #e5dcfc);
+  background: var(--background-image);
 }
 
 .container {
@@ -76,7 +76,7 @@ body {
 .hero-text h1,
 .section h1 {
   font-size: 38px;
-  color: var(--primary-color, #0a033c);
+  color: var(--background-image);
   margin-bottom: 20px;
 }
 
