@@ -103,14 +103,15 @@ body {
 .search-box input {
   border: none;
   outline: none;
-  padding-top: 3px;
+  padding: 0 30px;
   font-size: 8px;
+
 }
 
 .search-box button {
   background-color: #7b2eff;
   color: white;
-  padding: 5px;
+  padding: 7px 12px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -118,7 +119,6 @@ body {
 
 .hero-image {
   position: relative;
-
   text-align: center;
   width: fit-content;
   height: auto;
@@ -275,6 +275,16 @@ body {
     display: none;
   }
 
+
+
+  .search-box select,
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 8px;
+
+}
   .about::after {
     display: none;
   }
@@ -304,8 +314,8 @@ body {
 
 .tabs button {
   margin: 0 0.5rem;
-  width: 152px;
-  height: 69px;
+  width: 150px;
+  height: 50px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -590,28 +600,28 @@ p {
 }
 
 .user-top-left {
-  top: 65px;
-  left: 30px;
+  top: 20px;
+  left: 60px;
 }
 .user-top-right {
-  top: 65px;
-  right: 30px;
+  top: 20px;
+  right: 60px;
 }
 .user-mid-left {
-  top: 50%;
-  left: 80px;
+  top: 45%;
+  left: 200px;
 }
 .user-mid-right {
-  top: 50%;
-  right: 80px;
+  top: 45%;
+  right: 200px;
 }
 .user-bottom-left {
-  bottom: 65px;
-  left: 30px;
+  bottom: 40px;
+  left: 55px;
 }
 .user-bottom-right {
-  bottom: 65px;
-  right: 15px;
+  bottom: 40px;
+  right: 55px;
 }
 footer {
   padding: 50px 0 20px;
