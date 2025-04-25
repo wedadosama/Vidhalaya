@@ -8,23 +8,30 @@
 
 :root {
   --primary-color: #0a033c;
-  --background-color: linear-gradient(to right, #f5eaff, #e8d8ff, #dbc7ff);
+  --background-image: linear-gradient(to right, #f5eaff, #e8d8ff, #dbc7ff);
   --white: #ffffff;
+  --btn-color: #7b2eff;
+  --link-shadow: rgba(0, 0, 0, 0.9);
 }
 
 body.dark-theme {
-  --primary-color: #bd8ef2;
-  --background-color: linear-gradient(to right, #c79bef #8a4be2, #4915a9);
-  --white: #6d6767;
+  --primary-color: #d07efde5;
+  --background-image: linear-gradient(to right, #3c2a66, #2a1b47, #141020); 
+  --white: #e1e1e1; 
+  --btn-color: #4b2e83; 
+  --link-shadow: rgba(50, 50, 50, 0.6);
+  
+  
+  
 }
+
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(to right, #f5f0f9, #eee5fe, #e5dcfc);
+  background: var(--background-image);
 }
 
 .container {
@@ -114,9 +121,9 @@ header nav ul {
     padding: 10px 0;
   }
   header nav ul:hover {
-    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.9); 
-    color:var(--white);
-    background: linear-gradient(to right, #1a002d, #000000); 
+    background: var(--background-image);
+    text-shadow: 2px 2px 15px var(--link-shadow);
+  color: var(--white);
   }
 
   header nav ul.open {
