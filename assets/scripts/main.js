@@ -12,20 +12,11 @@ document.getElementById("menu-toggle").addEventListener("change", function () {
     navMenu.classList.remove("open");
   }
 });
-
 const form = document.querySelector('.subscribe-form');
-const input = form.querySelector('input');
-
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const email = input.value.trim();
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  if (emailRegex.test(email)) {
-    console.log("Subscribed with:", email);
-    alert("Thanks for subscribing!");
-    input.value = "";
-  } else {
-    alert("Please enter a valid email address.");
-  }
+  const email = form.querySelector('input').value.trim();
+  const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  alert(isValid ? "Thanks for subscribing!" : "Invalid email.");
+  if (isValid) form.reset();
 });

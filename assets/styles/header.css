@@ -11,7 +11,7 @@
   --background-image: linear-gradient(to right, #f5eaff, #e8d8ff, #dbc7ff);
   --white: #ffffff;
   --btn-color: #7b2eff;
-  --link-shadow: rgba(0, 0, 0, 0.9);
+  --link-shadow: rgb(214, 208, 208);
 }
 
 body.dark-theme {
