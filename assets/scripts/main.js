@@ -20,3 +20,4 @@ form.addEventListener('submit', (e) => {
   alert(isValid ? "Thanks for subscribing!" : "Invalid email.");
   if (isValid) form.reset();
 });
+
