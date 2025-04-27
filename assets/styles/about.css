@@ -53,7 +53,7 @@ body {
 .book-shop {
   width: 90%;
   max-width: 1200px;
-  background-image: url(/assets/images/Bg\\(3\).png);
+  background-image: url('/assets/images/Bg\\(3\).png');
   background-size: cover;
   background-position: center;
   border-radius: 20px;
