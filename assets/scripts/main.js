@@ -12,10 +12,10 @@ document.getElementById("menu-toggle").addEventListener("change", function () {
     navMenu.classList.remove("open");
   }
 });
-const form = document.querySelector('.subscribe-form');
-form.addEventListener('submit', (e) => {
+const form = document.querySelector(".subscribe-form");
+form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const email = form.querySelector('input').value.trim();
+  const email = form.querySelector("input").value.trim();
   const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   alert(isValid ? "Thanks for subscribing!" : "Invalid email.");
   if (isValid) form.reset();
