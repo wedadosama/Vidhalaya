@@ -54,11 +54,15 @@ footer {
 .footer-section ul li a:hover {
   color: var(--btn-color);
 }
-.Eduvi {
+.Eduvi-footer {
   padding-top: 60px;
-
   color: #5d5a6f;
 }
 .instagram {
   color: #ff6652;
+}
+.trademark{
+  padding-top: 60px;
+  color: #5d5a6f;
+  
 }
