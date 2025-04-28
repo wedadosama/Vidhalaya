@@ -13,7 +13,7 @@ document.getElementById("menu-toggle").addEventListener("change", function () {
   }
 });
 const form = document.querySelector(".subscribe-form");
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit",(e) => {
   e.preventDefault();
   const email = form.querySelector("input").value.trim();
   const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);

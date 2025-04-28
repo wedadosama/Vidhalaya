@@ -49,6 +49,7 @@ footer {
   color: #5d5a6f;
   font-size: 14px;
   line-height: 1.6;
+
 }
 
 .footer-section ul li a:hover {
@@ -62,7 +63,7 @@ footer {
   color: #ff6652;
 }
 .trademark{
-  padding-top: 60px;
+  padding-top: 10;
   color: #5d5a6f;
   
 }
