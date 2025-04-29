@@ -298,7 +298,7 @@ body {
   margin-top: 15px;
   padding: 8px 18px;
   background-color: var(--btn-color);
-  color:var(--white);
+  color: var(--white);
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -308,21 +308,87 @@ body {
 @media (max-width: 992px) {
   .Course-Overview h2 {
     font-size: 15px;
-    color: var(--primary-color);
     margin-bottom: 15px;
   }
 
   .Course-Overview p {
-    color: #5d5a6f;
     line-height: 1.1;
     font-size: 10px;
   }
 
   .Course-Overview h3 {
     font-size: 15px;
-
     .sidebar {
       width: 500px;
     }
   }
+  
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course-card {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  flex: 1 1 400px;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+  min-width: 300px;
+}
+
+.course-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.price {
+  color: #ff4500;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.bag-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+@media (max-width: 400px) {
+  .courses-container {
+    gap: 5px;
+  }
+
+  .course-card {
+    flex: 1 1 90%;
+    min-width: unset;
+    padding: 5px;
+    min-height: 80px;
+  }
+
+  .course-image {
+    width: 35px;
+    height: 35px;
+  }
+
+  
+  
 }
