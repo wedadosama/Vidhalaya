@@ -21,5 +21,14 @@ form.addEventListener("submit",(e) => {
   if (isValid) form.reset();
 });
 
-
-
+const cart = {
+  items: [],
+  addItem(course) {
+    this.items.push(course);
+    saveToLocalStorage('cart', this.items);
+  },
+  removeItem(courseId) {
+    this.items = this.items.filter(item => item.id !== courseId);
+    saveToLocalStorage('cart', this.items);
+  }
+};

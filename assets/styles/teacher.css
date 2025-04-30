@@ -123,3 +123,31 @@ flex-direction: column;
 
   
 }
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+}
+
+.image-section img {
+  width: 100%;
+}
+
+.content-section {
+  margin-left: 20px;
+}
+
+.requirements-rules {
+  display: flex;
+}
+
+.requirements, .rules {
+  margin-right: 20px;
+}
+
+ul {
+  list-style-type: disc;
+}
