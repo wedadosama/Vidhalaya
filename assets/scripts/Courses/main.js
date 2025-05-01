@@ -21,14 +21,20 @@ form.addEventListener("submit",(e) => {
   if (isValid) form.reset();
 });
 
-const cart = {
-  items: [],
-  addItem(course) {
-    this.items.push(course);
-    saveToLocalStorage('cart', this.items);
-  },
-  removeItem(courseId) {
-    this.items = this.items.filter(item => item.id !== courseId);
-    saveToLocalStorage('cart', this.items);
-  }
-};
+function displayEnrolledCourses() {
+  const enrolled = JSON.parse(localStorage.getItem('enrolledCourses')) || [];
+  const container = document.getElementById('enrolled-courses');
+  
+  enrolled.forEach(course => {
+    const courseElement = document.createElement('div');
+    courseElement.className = 'enrolled-course';
+    courseElement.innerHTML = `
+      <h3>${course.title}</h3>
+      <p>Progress: ${course.progress}%</p>
+      <div class="progress-bar">
+        <div style="width: ${course.progress}%"></div>
+      </div>
+    `;
+    container.appendChild(courseElement);
+  });
+}
