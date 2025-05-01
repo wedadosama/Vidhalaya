@@ -14,12 +14,10 @@
 
 body.dark-theme {
   --primary-color: #d07efde5;
-  --background-image: linear-gradient(to right, #3c2a66, #2a1b47, #141020); 
-  --white: #e1e1e1; 
-  --btn-color: #4b2e83; 
-  
+  --background-image: linear-gradient(to right, #3c2a66, #2a1b47, #141020);
+  --white: #e1e1e1;
+  --btn-color: #4b2e83;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -106,7 +104,6 @@ body {
   outline: none;
   padding: 0 30px;
   font-size: 8px;
-
 }
 
 .search-box button {
@@ -276,16 +273,13 @@ body {
     display: none;
   }
 
-
-
   .search-box select,
-.search-box input {
-  border: none;
-  outline: none;
-  padding: 0 10px;
-  font-size: 8px;
-
-}
+  .search-box input {
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 8px;
+  }
   .about::after {
     display: none;
   }
