@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0a033c;
+  --background-image: linear-gradient(to right, #f5eaff, #e8d8ff, #dbc7ff);
+  --white: #ffffff;
+  --btn-color: #7b2eff;
+}
+
+body.dark-theme {
+  --primary-color: #d07efde5;
+  --background-image: linear-gradient(to right, #3c2a66, #2a1b47, #141020);
+  --white: #e1e1e1;
+  --btn-color: #4b2e83;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background-image);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1190px;
+  }
+}
+
+.mentor-details {
+  padding: 20px 0;
+}
+
+.book-shop {
+  width: 95%;
+  height: 150px;
+  padding: 40px 0;
+  background-color: #efebf5;
+  border-radius: 20px;
+  margin: 40px auto;
+}
+
+.contact-btn {
+  background-color: var(--btn-color);
+  color: var(--white);
+  border: none;
+  padding: 16px 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+
+  left: 250px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+  top: -85px;
+}
+
+.profile-info .profile-info img {
+  width: 150px;
+}
+
+.profile-name {
+  font-size: 29px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.profile-name span {
+  font-size: 19px;
+  color: #a1a1aa;
+}
+
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.profile-content .section {
+  flex: 1 1 65%;
+}
+
+.profile-content .sidebar {
+  flex: 1 1 30%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: start;
+  max-width: 300px;
+  height: 290px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--white);
+  position: relative;
+  top: -270px;
+  right: 30px;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+  .contact-btn {
+    background-color: var(--btn-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    top: 0;
+    left: 0px;
+    position: relative;
+    transition: background-color 0.3s;
+  }
+}
+
+.sidebar p {
+  margin: 8px 0;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.sidebar p span {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  color: #a1a1aa;
+  margin-bottom: 20px;
+}
+
+.breadcrumbs span {
+  color: var(--btn-color);
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  top: -70px;
+  left: 180px;
+}
+
+.Rating-Stars {
+  width: 13%;
+  height: auto;
+  opacity: 0.9;
+}
+
+.buttons {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  padding: 20px 30px;
+  border: none;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 12px;
+  margin: 5px;
+  position: relative;
+  top: -85px;
+  right: 20px;
+}
+
+.buttons button.active {
+  background: linear-gradient(90deg, #f75c4e 0%, #ff9472 100%);
+  color: var(--white);
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.section-text {
+  line-height: 1.9;
+  color: #5d5a6f;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+  }
+
+  .profile-content .section,
+  .profile-content .sidebar {
+    flex: 1 1 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: start;
+  }
+}

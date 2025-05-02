@@ -91,11 +91,17 @@ body {
   color: var(--primary-color);
 }
 
-.image-content {
-  flex: 1 1 45%;
-  position: relative;
+.image {
   display: flex;
-  justify-content: center;
+  flex-direction: column;  /* ترتيب الصور عمودي */
+  align-items: flex-end;  /* محاذاة الصور لليمين */
+  gap: 5px; /* المسافة بين الصور */
+}
+
+.Rating-Stars {
+  width: 30px;  /* تعديل حجم الصورة حسب الرغبة */
+  height: 30px;  /* تعديل حجم الصورة حسب الرغبة */
+  opacity: 0.7;  /* جعل الصورة شفافة بنسبة 70% */
 }
 
 
@@ -280,7 +286,7 @@ body {
   position: absolute;
   object-fit: cover;
   z-index: 1;
-  opacity: 0.85;
+
 }
 
 .user-top-left {

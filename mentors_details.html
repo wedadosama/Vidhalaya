@@ -1,124 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/styles/header.css">
-  <link rel="stylesheet" href="assets/styles/mentor_details.css">
-  <link rel="stylesheet" href="assets/styles/footer.css">
-  <title>Vidhalaya</title>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="#">
-          <img src="assets/icons/icon (7).png" alt="" class="icon-log" />
-          Eduvi
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/header.css" />
+    <link rel="stylesheet" href="assets/styles/mentor_details.css" />
+    <link rel="stylesheet" href="assets/styles/footer.css" />
+    <title>Vidhalaya</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/icons/icon (7).png" alt="" class="icon-log" />
+            Eduvi
+          </a>
+        </div>
+        <nav>
+          <label for="menu-toggle">
+            <img src="assets/icons/menu.webp" class="toggle-menu" alt="menu" />
+          </label>
+          <input type="checkbox" id="menu-toggle" hidden />
+          <ul id="nav-menu">
+            <li><a href="#">Shop</a></li>
+            <li>
+              <a href="#">For Kindergarten <i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">For High School <i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">For College <i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">Courses <i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#"><span>Cart (0)</span><img src="assets/icons/Vector.png" class="icon-vector" /></a>
+            </li>
+            <li>
+              <a href="#"><span>My Account</span><img src="assets/images/Vector.png" class="icon" /></a>
+            </li>
+          </ul>
+          <img src="assets/icons/dark.webp" id="toggle-theme" class="icon" alt="dark mode" />
+        </nav>
       </div>
-      <nav>
-        <label for="menu-toggle">
-          <img src="assets/icons/menu.webp" class="toggle-menu" alt="menu" />
-        </label>
-        <input type="checkbox" id="menu-toggle" hidden />
-        <ul id="nav-menu">
-          <li><a href="#">Shop</a></li>
-          <li>
-            <a href="#">For Kindergarten <i class="fas fa-chevron-down"></i></a>
-          </li>
-          <li>
-            <a href="#">For High School <i class="fas fa-chevron-down"></i></a>
-          </li>
-          <li>
-            <a href="#">For College <i class="fas fa-chevron-down"></i></a>
-          </li>
-          <li>
-            <a href="#">Courses <i class="fas fa-chevron-down"></i></a>
-          </li>
-          <li>
-            <a href="#"> <span>Cart (0)</span><img src="assets/icons/Vector.png" class="icon-vector" /></a>
-          </li>
-          <li>
-            <a href="#"> <span>My Account</span><img src="assets/images/Vector.png" class="icon" /></a>
-          </li>
-        </ul>
-        <img src="assets/icons/dark.webp" id="toggle-theme" class="icon" alt="dark mode" />
-      </nav>
-    </div>
-  </header>
-  <footer>
-    <div class="container">
-      
-      <div class="footer-content">
-        <div class="footer-bottom">
-          <div class="logo">
-            <a href="#">
-              <img src="assets/icons/icon (7).png" alt="" class="icon-log" />
-              Eduvi
-            </a>
+    </header>
+
+    <main>
+      <section class="mentor-details">
+        <div class="container">
+          <div class="container book-shop">
+            <div class="breadcrumbs"><span>Home | Mentor | Kristin Watson</span></div>
+            <div class="book-shop-content">
+              <div class="image">
+                <img src="assets/images/Pattern (2).png" class="Rating-Stars" alt="Rating Stars" />
+                <img src="assets/images/Pattern (2).png" class="Rating-Stars" alt="Rating Stars" />
+              </div>
+            </div>
           </div>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram  instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+
+          <div class="profile-info">
+            <img src="assets/images/BG (9).png" alt="Profile Image" />
+            <p class="profile-name">Kristin Watson <br /><span>Founder & Mentor</span></p>
+            <button class="contact-btn">Contact Now</button>
           </div>
-          <p class="Eduvi-footer">©2021 Eduvi.co</p>
-          <p class="trademark">
-            Eduvi is a registered,<br />
-            trademark of Eduvi.co
-          </p>
-        </div>
-        <div class="footer-section">
-          <h2>Courses</h2>
-          <ul>
-            <li><a href="#">Classroom courses</a></li>
-            <li><a href="#">Virtual classroom courses</a></li>
-            <li><a href="#">E-learning courses</a></li>
-            <li><a href="#">Video Courses</a></li>
-            <li><a href="#">Offline Courses</a></li>
-          </ul>
-        </div>
 
-        <div class="footer-section">
-          <h2>Community</h2>
-          <ul>
-            <li><a href="#">Learners</a></li>
-            <li><a href="#">Parteners</a></li>
-            <li><a href="#">Developers</a></li>
-            <li><a href="#">Transactions</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Teaching Center</a></li>
-          </ul>
-        </div>
+          <section class="buttons-section">
+            <div class="container">
+              <div class="buttons">
+                <button class="active">About</button>
+                <button>Courses</button>
+                <button>Review</button>
+              </div>
+            </div>
+          </section>
 
-        <div class="footer-section">
-          <h2>Quick links</h2>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Professional Education</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Admissions</a></li>
-            <li><a href="#">Testimonial</a></li>
-            <li><a href="#">Programs</a></li>
-          </ul>
-        </div>
+          <div class="profile-content">
+            <section id="about" class="section">
+              <h2 class="section-title">About Kristin</h2>
+              <p class="section-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br />
+                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas<br />
+                accumsan lacus vel facilisis consectetur adipiscing elit.<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br />
+                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas<br />
+                accumsan lacus vel facilisis consectetur adipiscing elit.
+              </p>
+              <h2 class="section-title">Certification</h2>
+              <p class="section-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ouis ipsum suspendisse ultrices gravida. Risus commodo
+                viverra maecenas accumsan lacus vel facilisis consectetur adipiscing elit.
+              </p>
+            </section>
 
-        <div class="footer-section">
-          <h2>More</h2>
-          <ul>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Investors</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+            <div class="sidebar">
+              <p class="duration">Total Course <span>30</span></p>
+              <p class="lessons">Ratings <span>30</span></p>
+              <p class="quizzes">Experiences <span>10 Years</span></p>
+              <p class="certificate">Graduated <span>Yes</span></p>
+              <p class="access">Language <span>English, French</span></p>
+
+              <div class="social-icons">
+                <p class="section-title">Social</p>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-       
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-bottom">
+            <div class="logo">
+              <a href="#">
+                <img src="assets/icons/icon (7).png" alt="" class="icon-log" />
+                Eduvi
+              </a>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="Eduvi-footer">©2021 Eduvi.co</p>
+            <p class="trademark">
+              Eduvi is a registered,<br />
+              trademark of Eduvi.co
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h2>Courses</h2>
+            <ul>
+              <li><a href="#">Classroom courses</a></li>
+              <li><a href="#">Virtual classroom courses</a></li>
+              <li><a href="#">E-learning courses</a></li>
+              <li><a href="#">Video Courses</a></li>
+              <li><a href="#">Offline Courses</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h2>Community</h2>
+            <ul>
+              <li><a href="#">Learners</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Transactions</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Teaching Center</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h2>Quick links</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Professional Education</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Admissions</a></li>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Programs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h2>More</h2>
+            <ul>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Investors</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+    <script src="assets/scripts/Courses/main.js"></script>
+  </body>
 </html>
