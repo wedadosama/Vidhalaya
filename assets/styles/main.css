@@ -59,6 +59,7 @@ body {
 
 .hero-text {
   margin-bottom: 20px;
+  color: var(--primary-color);
 }
 
 .hero-text .tagline {
@@ -102,14 +103,17 @@ body {
 .search-box input {
   border: none;
   outline: none;
-  padding: 0 30px;
+
   font-size: 8px;
+}
+.search-box input {
+  padding: 0 40px;
 }
 
 .search-box button {
-  background-color: #7b2eff;
-  color: white;
-  padding: 7px 12px;
+  background-color: var(--btn-color);
+  color: var(--white);
+  padding: 10px 20px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -131,19 +135,23 @@ body {
 }
 
 .icons {
+  display: block;
   position: absolute;
   width: 30px;
   height: auto;
+  margin: 5px;
+  padding: 6px 3px;
+  background-color: var(--white);
   border-radius: 8px;
 }
 
 .icon1 {
   top: 2%;
-  left: 0%;
+  left: 2%;
 }
 
 .icon2 {
-  top: 10%;
+  top: 11%;
   right: 22%;
 }
 
@@ -210,35 +218,29 @@ body {
   z-index: 1;
 }
 
-.video {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 .mini-video {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
   width: 100px;
-  border: 5px solid white;
+  border: 5px solid var(--white);
   border-radius: 0.5rem;
   overflow: hidden;
 }
 .call-controls {
+  display: flex;
+  width: 40px;
+  height: 40px;
   position: absolute;
   bottom: 1.5rem;
   left: 50%;
-  transform: translateX(-50%);
-  display: flex;
   gap: 1rem;
-}
-.call-controls {
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transform: translateX(-50%);
+}
+.video-on {
+  position: relative;
+  left: 200px;
 }
 
 .counter-wrapper {
@@ -266,6 +268,10 @@ body {
   .promo-section h1 {
     font-size: 1.5rem;
   }
+
+  .video-wrapper {
+    max-width: 100%;
+  }
   .mini-video,
   .call-controls,
   .promo-icon,
@@ -277,9 +283,16 @@ body {
   .search-box input {
     border: none;
     outline: none;
-    padding: 0 10px;
+
     font-size: 8px;
   }
+  .search-box input {
+    padding: 0;
+  }
+  .search-box button {
+    padding: 5px 10px;
+  }
+
   .about::after {
     display: none;
   }
@@ -295,6 +308,7 @@ body {
 .header h2 {
   font-size: 2rem;
   font-weight: bold;
+  color: var(--primary-color);
 }
 
 .header p {
@@ -314,13 +328,14 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  color: var(--primary-color);
 }
 button {
   background-color: var(--background-color);
 }
 .tabs .active {
   background: #ff715b;
-  color: white;
+  color: var(--white);
 }
 
 .cards-container {
@@ -428,6 +443,7 @@ h1 {
   margin-bottom: 20px;
   color: var(--primary-color);
   line-height: 1.4;
+  color: var(--primary-color);
 }
 
 p {
@@ -438,7 +454,7 @@ p {
 
 .register-btn {
   background-color: var(--btn-color);
-  color: white;
+  color: var(--white);
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
