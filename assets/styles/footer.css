@@ -46,10 +46,9 @@ footer {
 }
 
 .footer-section ul li a {
-  color: #5d5a6f;
+  color: #aaa8b6;
   font-size: 14px;
   line-height: 1.6;
-
 }
 
 .footer-section ul li a:hover {
@@ -57,13 +56,30 @@ footer {
 }
 .Eduvi-footer {
   padding-top: 60px;
-  color: #5d5a6f;
+  color: #aaa8b6;
 }
 .instagram {
   color: #ff6652;
 }
-.trademark{
+.trademark {
   padding-top: 10;
-  color: #5d5a6f;
-  
+  color: #aaa8b6;
+}
+@media (max-width: 992px) {
+  .logo {
+    text-align: center;
+    position: relative;
+    left: 35px;
+  }
+  .trademark,
+  .Eduvi-footer {
+    position: relative;
+    left: 65px;
+  }
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 70px;
+  }
 }

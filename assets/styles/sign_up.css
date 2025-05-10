@@ -29,7 +29,7 @@ body.dark-theme {
 }
 
 body {
-  background-image: url("/assets/icons/image.png");
+  background-image: url("/assets/icons/image.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
