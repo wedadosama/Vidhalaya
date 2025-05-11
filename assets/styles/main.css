@@ -64,14 +64,14 @@ body {
 }
 
 .hero-text .tagline {
-  background-color: var(--white);
-  color: #ff5c5c;
-  padding: 5px 12px;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 7px 15px;
   border-radius: 8px;
   font-weight: bold;
   font-size: 14px;
-  display: inline-block;
-  margin-bottom: 20px;
+  color: #ff5c5c;
+  background-color: var(--white);
 }
 
 .hero-text h1,
@@ -94,6 +94,7 @@ body {
   padding: 7px 2px;
   border-radius: 10px;
   width: fit-content;
+  margin: auto;
 }
 
 .icon-search {
@@ -112,11 +113,13 @@ body {
 }
 
 .search-box button {
+
   background-color: var(--btn-color);
   color: var(--white);
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
+ 
   cursor: pointer;
 }
 
@@ -269,6 +272,19 @@ body {
   .promo-section h1 {
     font-size: 1.5rem;
   }
+
+  .hero-text p{
+    text-align: center;
+  }
+
+  .hero-text .tagline {
+    display: block;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+
+  }
+  
 
   .hero-text h1{
     text-align: center;

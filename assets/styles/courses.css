@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -124,13 +122,14 @@ body {
 }
 
 .buttons button {
-  padding: 20px;
+  padding: 15px 5px;
   border: none;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   font-size: 16px;
+  width: 180px;
   transition: 0.3s;
 }
 
@@ -156,7 +155,15 @@ body {
     padding: 15px;
   }
   .buttons {
-    justify-content: start;
+    justify-content: center;
+  }
+  .text-content h1 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    color: var(--primary-color);
   }
 }
 .text-card {
@@ -239,31 +246,34 @@ body {
 }
 
 .search-box {
-  position: relative;
-  flex: 1;
-  min-width: 250px;
+  display: flex;
+  width: 70%;
+
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
 }
 
 .search-input {
-  width: 95%;
-  padding: 12px 50px 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
   font-size: 16px;
+  background-color: transparent;
+  outline: none;
+  padding-left: 15px;
+
+  border: none;
 }
 
 .search-btn {
-  position: absolute;
-  top: 50%;
-  right: 48px;
   border-radius: 6px;
-  transform: translateY(-50%);
-  background: transparent;
+  gap: 5px;
   border: none;
+  width: fit-content;
   cursor: pointer;
+  outline: none;
   display: flex;
   align-items: center;
-  padding: 10px 5px;
+  padding: 10px;
+  color: var(--white);
   background-color: var(--btn-color);
 }
 
@@ -371,30 +381,8 @@ body {
     flex-direction: column;
     align-items: stretch;
   }
-
   .search-box {
-    position: relative;
     width: 100%;
-    min-width: unset;
-  }
-
-  .search-input {
-    width: 100%;
-    padding: 10px 45px 10px 15px;
-  }
-
-  .search-btn {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-
-    gap: 4px;
-    font-size: 12px;
-  }
-
-  .search-btn img {
-    width: 16px;
-    height: 16px;
   }
 
   .sort-select {
@@ -419,12 +407,11 @@ body {
   }
 }
 
-.newsletter-section{
+.newsletter-section {
   padding: 20px 0;
 }
 
 .newsletter-box {
-
   background-color: var(--primary-color);
   border-radius: 12px;
   padding: 50px 30px;
@@ -515,9 +502,8 @@ body {
   bottom: 40px;
   right: 55px;
 }
-@media (max-width :992px){
-  .user-img{
+@media (max-width: 992px) {
+  .user-img {
     display: none;
-  } 
-
+  }
 }
