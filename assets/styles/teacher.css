@@ -105,19 +105,7 @@ body {
   height: auto;
 }
 
-@media (max-width: 992px) {
-  .heading {
-    margin: 0 auto;
-    width: 50%;
-    font-size: 25px;
-    font-weight: 300;
-  }
-  .Rating-Stars {
-    display: none;
-  }
-}
 .instructor-requirements {
-  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +119,6 @@ body {
 
 .image-section img {
   width: 80%;
-  margin-left: 30px;
 }
 
 .content-section {
@@ -191,7 +178,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative;
 }
 
 .image-container {
@@ -353,5 +339,20 @@ button {
   }
   .search-box {
     padding: 2px;
+  }
+
+  .heading {
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .Rating-Stars {
+    display: none;
+  }
+  .book-shop-content {
+    justify-content: center;
+  }
+  .image-section img {
+    width: 100%;
   }
 }
