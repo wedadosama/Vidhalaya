@@ -174,17 +174,27 @@ form input[type="password"] {
   cursor: pointer;
 }
 
-.signin-text {
+.act{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 20px;
+}
+.signin-text {
+
   text-align: center;
   display: flex;
   gap:7px;
 
 }
+@media(max-width:700px){
+  .signup-container{
+    flex-direction: column;
+
+  }
+}
 
 .signin-text a{
-  position: relative;
-  left: 100px;
   color: #888;
 }
 
