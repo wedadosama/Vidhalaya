@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +23,7 @@ html {
 
 body {
   background: var(--background-image);
+  cursor: pointer;
 }
 
 .container {
@@ -64,8 +63,10 @@ body {
 
 .breadcrumbs {
   font-size: 14px;
-  color: #a1a1aa;
   margin-bottom: 20px;
+}
+.breadcrumbs a {
+  color: var(--btn-color);
 }
 .Rating-Stars {
   margin-left: 150px;
@@ -112,6 +113,11 @@ body {
   flex-wrap: wrap;
 }
 
+.requirements img {
+  width: 10px;
+  height: 10px;
+  margin: 3px;
+}
 .contact {
   display: flex;
   flex-wrap: wrap;
@@ -125,7 +131,7 @@ body {
   margin-top: 30px;
 }
 .content-section p {
-  color: #5d5a6f;
+  color: #7f7c94;
   letter-spacing: 1.2px;
 }
 
@@ -158,8 +164,7 @@ button {
   border: none;
   padding: 15px;
   border-radius: 8px;
-  cursor: pointer;
-  color: #5d5a6f;
+  color: var(--white);
 }
 
 .apply-section {
@@ -281,7 +286,6 @@ button {
   padding: 12px 20px;
   border: none;
   font-size: 14px;
-  cursor: pointer;
   height: 100%;
 }
 

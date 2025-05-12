@@ -51,7 +51,7 @@ body {
 .book-shop {
   width: 90%;
   max-width: 1200px;
-  background-image: url("/assets/images/Bg\\(3\).png");
+  background-image: url("/assets/images/Bg\\(3\).webp");
   background-size: cover;
   background-position: center;
   border-radius: 20px;
@@ -292,8 +292,10 @@ img {
   }
 
   .tabs {
-    flex-direction: column;
-    gap: 10px;
+    text-align: center;
+    margin: 0 auto;
+ 
+    align-items: center;
   }
   .user-img{
     display: none;

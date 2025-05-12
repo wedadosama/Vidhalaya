@@ -54,7 +54,6 @@ body {
   background-color: #efebf5;
   width: 90%;
   margin: 0 auto;
-
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -72,7 +71,7 @@ body {
 }
 
 .breadcrumbs span {
-  color: #7b2eff;
+  color: var(--btn-color);
 }
 
 .course-content {
@@ -104,7 +103,7 @@ body {
 
 .playlist-title {
   font-size: 24px;
-  color: #0a033c;
+  color: var(--primary-color);
   margin-bottom: 20px;
 }
 
@@ -203,7 +202,7 @@ body {
 }
 
 .course-section {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .course-section {
@@ -267,7 +266,6 @@ body {
   max-width: 300px;
   height: 290px;
   padding: 15px;
-  margin-right: 100px;
   margin-top: 65px;
   border-radius: 8px;
   background-color: var(--white);
@@ -275,7 +273,7 @@ body {
 
 .sidebar p {
   margin: 8px 0;
-  color: #333;
+  color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   font-size: 14px;
@@ -304,6 +302,54 @@ body {
   font-weight: bold;
   font-size: 14px;
 }
+@media (max-width: 600px){
+  .sidebar {
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    flex: 1 1 30%;
+    flex-direction: column;
+    max-width: 300px;
+    height: 290px;
+    padding: 15px;
+    margin-top: 65px;
+    border-radius: 8px;
+    background-color: var(--white);
+  }
+  
+  .sidebar p {
+    margin: 8px 0;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+  }
+  
+  .sidebar p span {
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .sidebar .stars img {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  .sidebar .button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    background-color: var(--btn-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+}
 
 @media (max-width: 992px) {
   .Course-Overview h2 {
@@ -318,9 +364,10 @@ body {
 
   .Course-Overview h3 {
     font-size: 15px;
-    .sidebar {
-      width: 500px;
-    }
+  }
+  .sidebar {
+    display: block;
+    width: 300px;
   }
 }
 
@@ -484,9 +531,8 @@ body {
   bottom: 40px;
   right: 55px;
 }
-@media (max-width :992px){
-  .user-img{
+@media (max-width: 992px) {
+  .user-img {
     display: none;
-  } 
-
+  }
 }

@@ -151,6 +151,9 @@ body {
   .text-content h1 {
     font-size: 30px;
   }
+  .text-card{
+    text-align: center;
+  }
   .buttons button {
     padding: 15px;
   }

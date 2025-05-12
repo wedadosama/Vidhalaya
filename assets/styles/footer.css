@@ -1,3 +1,55 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #0a033c;
+  --background-image: linear-gradient(to right, #f5eaff, #e8d8ff, #dbc7ff);
+  --white: #ffffff;
+  --btn-color: #7b2eff;
+}
+
+body.dark-theme {
+  --primary-color: #d07efde5;
+  --background-image: linear-gradient(to right, #3c2a66, #2a1b47, #141020);
+  --white: #e1e1e1;
+  --btn-color: #4b2e83;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background-image);
+}
+
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1190px;
+  }
+}
 footer {
   padding: 50px 0 20px;
 }
@@ -46,7 +98,7 @@ footer {
 }
 
 .footer-section ul li a {
-  color: #aaa8b6;
+  color: #807373;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -56,14 +108,14 @@ footer {
 }
 .Eduvi-footer {
   padding-top: 60px;
-  color: #aaa8b6;
+  color:#807373;
 }
 .instagram {
   color: #ff6652;
 }
 .trademark {
   padding-top: 10;
-  color: #aaa8b6;
+  color: #807373;
 }
 @media (max-width: 992px) {
   .logo {
@@ -74,7 +126,7 @@ footer {
   .trademark,
   .Eduvi-footer {
     position: relative;
-    left: 65px;
+    left: 20px;
   }
   .social-icons {
     display: flex;

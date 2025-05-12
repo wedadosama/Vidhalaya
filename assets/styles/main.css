@@ -19,10 +19,29 @@ body.dark-theme {
 
 html {
   scroll-behavior: smooth;
+  font-family: "Times New Roman", Times, serif;
 }
 
 body {
   background: var(--background-image);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
 }
 
 .container {
@@ -50,12 +69,6 @@ body {
 
 .hero {
   padding: 20px 0;
-}
-.hero .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero-text {
@@ -105,7 +118,6 @@ body {
 .search-box input {
   border: none;
   outline: none;
-
   font-size: 8px;
 }
 .search-box input {
@@ -113,19 +125,13 @@ body {
 }
 
 .search-box button {
-
   background-color: var(--btn-color);
   color: var(--white);
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
- 
-  cursor: pointer;
 }
-
 .hero-image {
-  position: relative;
-  text-align: center;
   width: fit-content;
   height: auto;
 }
@@ -140,7 +146,6 @@ body {
 
 .icons {
   display: block;
-  position: absolute;
   width: 30px;
   height: auto;
   margin: 5px;
@@ -169,10 +174,7 @@ body {
   right: 17%;
 }
 .about {
-  text-align: center;
-  position: relative;
   padding: 2rem;
-
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -196,7 +198,6 @@ body {
   max-width: 600px;
   margin: auto auto 1.5rem;
   z-index: 1;
-  position: relative;
 }
 .about button {
   background-color: var(--btn-color);
@@ -205,13 +206,10 @@ body {
   padding: 0.7rem 1.5rem;
   border-radius: 0.5rem;
   font-size: 1rem;
-  cursor: pointer;
   margin-bottom: 2rem;
   z-index: 1;
-  position: relative;
 }
 .video-wrapper {
-  position: relative;
   background: var(--white);
   border-radius: 1rem;
   overflow: hidden;
@@ -221,9 +219,7 @@ body {
   padding: 1rem;
   z-index: 1;
 }
-
 .mini-video {
-  position: absolute;
   bottom: 2rem;
   left: 2rem;
   width: 100px;
@@ -235,7 +231,6 @@ body {
   display: flex;
   width: 40px;
   height: 40px;
-  position: absolute;
   bottom: 1.5rem;
   left: 50%;
   gap: 1rem;
@@ -243,18 +238,14 @@ body {
   transform: translateX(-50%);
 }
 .video-on {
-  position: relative;
   left: 200px;
 }
 
 .counter-wrapper {
-  display: flex;
-  justify-content: center;
   gap: 10px;
   margin-top: 2rem;
   flex-wrap: wrap;
   z-index: 1;
-  position: relative;
 }
 .counter-box {
   background: var(--white);
@@ -273,21 +264,10 @@ body {
     font-size: 1.5rem;
   }
 
-  .hero-text p{
-    text-align: center;
-  }
-
   .hero-text .tagline {
     display: block;
-  margin: auto;
-  width: 50%;
-  text-align: center;
-
-  }
-  
-
-  .hero-text h1{
-    text-align: center;
+    margin: auto;
+    width: 50%;
   }
 
   .video-wrapper {
@@ -305,14 +285,13 @@ body {
   .search-box input {
     border: none;
     outline: none;
-
     font-size: 8px;
   }
   .search-box input {
     padding: 0;
   }
   .search-box button {
-    padding: 9px ;
+    padding: 9px;
   }
 
   .about::after {
@@ -321,10 +300,6 @@ body {
   .search-box {
     padding: 2px;
   }
-}
-
-.lessons-section {
-  text-align: center;
 }
 
 .header h2 {
@@ -349,7 +324,6 @@ body {
   height: 50px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
   color: var(--primary-color);
 }
 button {
@@ -376,21 +350,20 @@ button {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  text-align: center;
   width: 250px;
   height: 300px;
-  background-color: var(--white);
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding: 1.5rem;
+  border-radius: 15px;
+  background-color: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .card img {
+  display: block;
   width: 40px;
   height: 40px;
-  display: block;
-  margin: 0 auto 1rem auto;
   object-fit: cover;
+  margin: 0 auto 1rem auto;
 }
 
 .card h3 {
@@ -405,12 +378,10 @@ button {
 .card .btn {
   display: inline-block;
   margin-top: 1rem;
-
   border: 2px solid var(--btn-color);
   color: var(--btn-color);
   padding: 10px;
   border-radius: 6px;
-  text-decoration: none;
 }
 
 .card .btn:hover {
@@ -422,7 +393,6 @@ button {
   color: var(--white);
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
-  text-decoration: none;
 }
 
 .promo-section {
@@ -443,11 +413,9 @@ button {
   flex-wrap: wrap;
   gap: 10px;
 }
-
 .text-area {
   max-width: 500px;
 }
-
 .level {
   display: inline-block;
   padding: 6px 12px;
@@ -480,13 +448,11 @@ p {
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
   font-weight: bold;
   font-size: 14px;
 }
 
 .image-area {
-  position: relative;
   width: 100%;
   max-width: 500px;
 }
@@ -497,7 +463,6 @@ p {
 }
 
 .promo-icon {
-  position: absolute;
   width: 60px;
   height: 60px;
 }
@@ -506,97 +471,73 @@ p {
   top: 30%;
   left: 10%;
 }
-
 .promo-icon.php {
   top: 5%;
   right: 10%;
 }
-
 .promo-icon.java {
   top: 0;
   right: 35%;
 }
-
 .mentor-section {
   padding: 50px 0;
 }
-
 .mentor-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
 }
-
 .image-container {
   width: 300px;
   height: 300px;
 }
-
 .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .text-content {
   max-width: 500px;
 }
-
 .text-content h2 {
   font-size: 32px;
   color: var(--primary-color);
   margin-bottom: 20px;
 }
-
 .text-content p {
   color: #aaa8b6;
   margin-bottom: 30px;
 }
-
 .text-content .btn {
   padding: 10px 20px;
   background-color: var(--btn-color);
   color: var(--white);
   border: none;
   border-radius: 8px;
-  cursor: pointer;
   font-weight: bold;
-  text-decoration: none;
 }
 .newsletter-box {
   background-color: var(--primary-color);
   border-radius: 12px;
   padding: 50px 30px;
   color: var(--white);
-  position: relative;
-  text-align: center;
   overflow: hidden;
   margin: auto;
 }
-
 .newsletter-content h2 {
   font-size: 28px;
   margin-bottom: 10px;
 }
-
 .newsletter-content p {
   font-size: 16px;
   margin-bottom: 25px;
 }
-
 .subscribe-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   max-width: 450px;
   margin: auto;
   border-radius: 8px;
   overflow: hidden;
 }
-
 .subscribe-form input {
   flex: 1;
   padding: 12px;
@@ -607,31 +548,25 @@ p {
   background: rgba(255, 255, 255, 0.3);
   color: var(--white);
 }
-
 .subscribe-form input::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-
 .subscribe-form button {
   background-color: var(--btn-color);
   color: var(--white);
   padding: 12px 20px;
   border: none;
   font-size: 14px;
-  cursor: pointer;
   height: 100%;
 }
-
 .user-img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  position: absolute;
   object-fit: cover;
   z-index: 1;
   opacity: 0.85;
 }
-
 .user-top-left {
   top: 20px;
   left: 60px;
