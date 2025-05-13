@@ -95,7 +95,7 @@ body {
 }
 
 .hero-text p {
-  color: #aaa8b6;
+  color: #92909a;
   font-size: 6px;
   margin-bottom: 25px;
   font-size: 11px;
@@ -193,11 +193,10 @@ body {
 }
 
 .about p {
-  font-size: 1rem;
+  font-size: 14px;
   color: #aaa8b6;
-  max-width: 600px;
-  margin: auto auto 1.5rem;
-  z-index: 1;
+  text-align: start;
+
 }
 .about button {
   background-color: var(--btn-color);
@@ -213,7 +212,7 @@ body {
   background: var(--white);
   border-radius: 1rem;
   overflow: hidden;
-  max-width: 70%;
+  /* max-width: 70%; */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   margin: auto;
   padding: 1rem;
@@ -245,7 +244,7 @@ body {
   gap: 10px;
   margin-top: 2rem;
   flex-wrap: wrap;
-  z-index: 1;
+ 
 }
 .counter-box {
   background: var(--white);
@@ -255,19 +254,27 @@ body {
 .counter-box img {
   width: 20px;
   height: auto;
-}
+} 
 
 @media (max-width: 992px) {
   .about h1,
   .hero-text h1,
   .promo-section h1 {
-    font-size: 1.5rem;
+    font-size:16px;
   }
+  .hero-text p {
+  color: #817f87;
+  font-size: 6px;
+  text-align: start;
+  margin-bottom: 25px;
+  font-size: 10px;
+}
+
 
   .hero-text .tagline {
     display: block;
-    margin: auto;
-    width: 50%;
+    width: 70%; 
+   
   }
 
   .video-wrapper {

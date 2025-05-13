@@ -1,6 +1,3 @@
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -51,11 +48,15 @@ body {
   }
 }
 footer {
-  padding: 50px 0 20px;
+  padding: 40px 0;
 }
 
 .logo {
-  font-size: 24px;
+  display: flex;
+  align-items: start;
+  text-align: start;
+  justify-content: space-between;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -66,72 +67,48 @@ footer {
 
 .social-icons a {
   color: var(--primary-color);
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 10px;
 }
 
 .social-icons a:hover {
-  color: #4a6bff;
+  color: #ff6652;
+}
+.Eduvi-footer,.trademark{
+  color: #807373;
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-}
-
-.footer-section {
-  flex: 1;
-  margin-bottom: 30px;
-  padding: 0px 70px;
 }
 
 .footer-section h2 {
   color: var(--primary-color);
   font-size: 18px;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-.footer-section ul li {
   margin-bottom: 10px;
 }
 
 .footer-section ul li a {
   color: #807373;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
 .footer-section ul li a:hover {
-  color: var(--btn-color);
-}
-.Eduvi-footer {
-  padding-top: 60px;
-  color:#807373;
-}
-.instagram {
   color: #ff6652;
 }
-.trademark {
-  padding-top: 10;
-  color: #807373;
-}
+
 @media (max-width: 992px) {
-  .logo {
-    text-align: center;
-    position: relative;
-    left: 35px;
-  }
-  .trademark,
-  .Eduvi-footer {
-    position: relative;
-    left: 20px;
-  }
-  .social-icons {
+
+  .footer-content {
     display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    align-items: start;
     gap: 10px;
-    position: relative;
-    left: 70px;
+    flex-direction: column;
   }
 }
