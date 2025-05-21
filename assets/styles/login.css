@@ -29,11 +29,8 @@ body.dark-theme {
 }
 
 body {
-  background-image: url("/assets/icons/image.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  overflow-y: hidden;
+ 
+background-image: linear-gradient(to right, #f5eaff, #e8d8ff, #dbc7ff);
   font-family: 'Roboto', sans-serif';
  
 }
@@ -59,17 +56,19 @@ body {
     width: 1190px;
   }
 }
-
+/* 
 .Eduvi{
   display: flex;
-  align-items: center; 
-}
-.icon {
-  width: 30px;
+ align-items: center;
+
+  
+} */
+/* .icon {
+  width: px;
   height: auto;
   cursor: pointer;
   
-}
+} */
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.2);
@@ -84,7 +83,6 @@ body {
 
 .signup-container {
   width: 80%;
-  max-width: 900px;
   display: flex;
   flex-wrap: wrap;
   background: var(--white);
@@ -96,7 +94,7 @@ body {
 
 .left {
   flex: 1;
-  padding: 40px;
+  padding: 20px;
   background: var(--white);
   display: flex;
   flex-direction: column;
@@ -104,7 +102,8 @@ body {
   align-items: center;
 }
 
-.left img {
+
+.Illustration{
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -112,17 +111,20 @@ body {
 }
 
 .left a {
+  font-size: 30px;
+  display: block;
+  font-weight: bold;
   text-decoration: none;
   color: var(--primary-color);
 }
 
 .icon-log {
-  width: 15px;
-  height: 15px;
+  
 }
 
 .left h2 {
   margin-top: 20px;
+  padding: 20px;
   text-align: center;
   color: #333;
 }
@@ -187,7 +189,7 @@ form input[type="password"] {
   gap:7px;
 
 }
-@media(max-width:700px){
+@media(max-width:992px){
   .signup-container{
     flex-direction: column;
 

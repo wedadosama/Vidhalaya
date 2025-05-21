@@ -53,11 +53,12 @@ footer {
 
 .logo {
   display: flex;
-  align-items: start;
-  text-align: start;
-  justify-content: space-between;
-  font-size: 20px;
+  /* align-items: start;
+  text-align: start; */
+  /* justify-content: space-between; */
+  font-size: 25px;
   font-weight: bold;
+    padding: 20px 0 ;
 }
 
 .social-icons {
@@ -78,6 +79,7 @@ footer {
   color: #807373;
 }
 
+
 .footer-content {
   display: flex;
   flex-wrap: wrap;
@@ -89,12 +91,17 @@ footer {
   color: var(--primary-color);
   font-size: 18px;
   margin-bottom: 10px;
+  padding: 20px 0;
+
+
+
 }
 
 .footer-section ul li a {
   color: #807373;
   font-size: 18px;
   line-height: 1.6;
+
 }
 
 .footer-section ul li a:hover {

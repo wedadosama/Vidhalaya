@@ -82,7 +82,7 @@ img {
   width: 15px;
 }
 .icon-log {
-  width: 25px;
+  width: 30px;
 }
 
 header {
@@ -106,8 +106,9 @@ header .container {
 }
 
 header .logo {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 700;
+
   color: var(--primary-color);
 }
 
@@ -122,10 +123,10 @@ header nav {
 }
 
 header nav ul {
-  font-size: 13px;
+  font-size: 20px;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 header nav ul li a {
